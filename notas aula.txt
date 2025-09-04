@@ -4,5 +4,12 @@ git add .
 git commit -m "mensagem"
 
 push
-git push - push total
+git push ou
 git push -u origin main 
+
+-- Remove tudo o que está a ser seguido para dar reset ao gitignore
+git rm -r --cached
+
+-- após isso podemos sim voltar a fazer
+git add .
+git commit -m "Aplica .gitignore e remove ficheiros indesejados"
