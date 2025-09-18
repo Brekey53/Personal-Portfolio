@@ -382,6 +382,70 @@ footer .column > a:hover{
     }
 }
 
+.timeline {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.timeline .event {
+    background-color: #27272a;
+    padding: 1.5rem;
+    border-radius: 15px;
+    border-left: 4px solid #6f91f0;
+    transition: all 0.3s ease;
+    color: #fff;
+}
+
+.timeline .event h4{
+    color: #6f91f0; 
+}
+
+.timeline .event p{
+    color: #ccc; 
+}
+
+.timeline .event:hover {
+    background-color: #323232;
+}
+
+.skills{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+    justify-items: center;
+}
+
+.skill{
+    background-color: #27272a;
+    padding: 1.5rem;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+    transition: all 0.3s ease;
+    width: 100px;
+    text-align: center;
+}
+
+.skill i{
+    font-size: 2.5rem;
+    color: #6f91f0;
+}
+
+.skill span{
+    color: #fff;
+    font-weight: 500;
+}
+
+.skill:hover{
+    background-color: #323232;
+    transform: translateY(-5px);
+}
+
 .dot {
     display: inline-block;
     font-size: 2rem;
