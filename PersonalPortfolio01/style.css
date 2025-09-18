@@ -214,10 +214,10 @@ section .header{
 }
 
 .pricing{
-    margin-top: 4rem;
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 2rem;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px; /* espaçamento entre cards */
+    margin-top: 20px;
 }
 
 .pricing .card{
