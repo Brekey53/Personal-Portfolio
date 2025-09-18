@@ -393,15 +393,23 @@ footer .column > a:hover{
     background-color: #27272a;
     padding: 1.5rem;
     border-radius: 15px;
-    border-left: 4px solid #1d4ed8;
+    border-left: 4px solid #6f91f0;
     transition: all 0.3s ease;
+    color: #fff;
+}
+
+.timeline .event h4{
+    color: #6f91f0; 
+}
+
+.timeline .event p{
+    color: #ccc; 
 }
 
 .timeline .event:hover {
     background-color: #323232;
 }
 
-/* Skills */
 .skills{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
@@ -425,7 +433,7 @@ footer .column > a:hover{
 
 .skill i{
     font-size: 2.5rem;
-    color: #1d4ed8;
+    color: #6f91f0;
 }
 
 .skill span{
