@@ -1,5 +1,7 @@
 Grande parte das vezes iremos usar
 
+git clone https://github.com.......
+
 git add .
 git commit -m "mensagem"
 
@@ -8,8 +10,29 @@ git push ou
 git push -u origin main 
 
 -- Remove tudo o que está a ser seguido para dar reset ao gitignore
-git rm -r --cached
+git rm -r --cached .
 
 -- após isso podemos sim voltar a fazer
 git add .
 git commit -m "Aplica .gitignore e remove ficheiros indesejados"
+
+
+Crie um novo repositório no GitHub (sem ficheiro README para evitar conflitos).
+
+• Adicione o repositório remoto ao seu projeto local: O link do repositório remoto pode ser copiado
+no GitHub, no botão verde Code, escolhendo HTTPS ou SSH.
+
+git remote add origin https://github.com/utilizador/repositorio.git
+
+• Envie as alterações para o repositório remoto e defina a branch principal:
+
+git push -u origin main
+
+• Agora, volte ao repositório local e modifique o ficheiro, por exemplo, editando o README.md. Depois,
+faça um novo commit e envie novamente para o GitHub:
+
+git add README.md
+git commit -m "Atualiza README com nova linha"
+git push
+
+- git remote add upstream https://github.com/utilizador/repositorioMain.git
